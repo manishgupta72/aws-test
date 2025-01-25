@@ -8,11 +8,11 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 // add middlewares
-const root = require('path').join(__dirname, 'build');
+const root = require('path').join(__dirname, 'dist');
 app.use(express.static(root));
 
 app.use('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 // start express server on port 5000
