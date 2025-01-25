@@ -9,6 +9,7 @@ function App() {
   return (
     <>
     <h1>Hello Welcome to Aws testing</h1>
+    <h2>Now update reflected on the aws</h2>
     </>
   )
 }
